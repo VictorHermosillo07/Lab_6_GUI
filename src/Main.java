@@ -17,7 +17,7 @@ public class Main {
     private static void runGUIVersion() {
         JFrame frame = new JFrame("Chess Game");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(800, 800);
+        frame.setSize(1000, 1000);
         frame.setLayout(new BorderLayout());
 
         // Chessboard panel
@@ -42,9 +42,10 @@ public class Main {
         JPanel controlPanel = new JPanel();
 
         // Dropdowns for selecting piece, pieceColor, and positions
-        String[] pieces = {"Pawn", "Rook", "Knight", "Queen", "King"};
+        String[] pieces = {"Pawn", "Rook", "Knight", "Queen", "King", "Bishop"};
         String[] colors = {"WHITE", "BLACK"};
         String[] indices = {"0", "1", "2", "3", "4", "5", "6", "7"};
+
 
         JComboBox<String> pieceSelector = new JComboBox<>(pieces);
         JComboBox<String> colorSelector = new JComboBox<>(colors);
